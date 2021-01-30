@@ -1,0 +1,123 @@
+:root{
+    --first-color: #4070F4;
+    --second-color: #ffffff;
+}
+:root{
+    --header-height: 3rem;
+    --font-semi: 600;
+}
+:root{
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+}
+@media screen and (min-width: 768px){
+    :root{
+      --big-font-size: 3.5rem;
+      --h2-font-size: 2rem;
+      --normal-font-size: 1rem;
+    }
+}
+:root{
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+}
+  
+  /*===== z index =====*/
+:root{
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+  
+.about__subtitle{
+    margin-bottom: var(--mb-2);
+}
+.container{
+    max-width: 955px;
+    margin: auto;
+    height: 90vh;
+    border: 2.5px solid blue;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+.message{
+    background-color: rgb(0,191,255);
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid blue;
+    border-radius: 15px;
+}
+.section-title{
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+    text-align: center;
+}
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--first-color);
+}
+.left{
+    float: left;
+    clear:both;
+}
+.right{
+    float: right;
+    clear:both;
+}
+
+#send-container{
+    display:block;
+    margin:auto;
+    text-align:centre;
+    max-width: 985px;
+    width: 70%;
+}
+
+#messageInp{
+    width: 87%;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.btn{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: var(--mb-2);
+    width: 10%;
+
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(black, blue);
+}
+@media screen and (min-width: 768px){
+    .section-title{
+        margin-bottom: var(--mb-6);
+    }
+    .section-title::after{
+        width: 80px;
+        top: 3rem;
+    }
+}
