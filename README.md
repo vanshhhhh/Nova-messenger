@@ -10,8 +10,8 @@ pip install npm
 npm install -g nodemon
 ```
 ## Usage
-- Start the server using the terminal:
+- Start the server using the terminal in \Nova-Messenger\Node Server directory:
 ```
-nodemon ./index.html
+nodemon ./index.js
 ```
 - Open index.html and enter your name
